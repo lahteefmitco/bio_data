@@ -18,7 +18,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          toolbarHeight: 250,
+          toolbarHeight: 150,
           elevation: 6,
           title: const Center(
             child: Column(
@@ -46,429 +46,437 @@ class MainApp extends StatelessWidget {
         body: SingleChildScrollView(
           child: Column(
             children: [
-              // personal information
-              Container(
-                color: const Color.fromARGB(255, 196, 206, 214),
-                child: Padding(
-                  padding: const EdgeInsets.all(16),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      customHeight(16),
-
-                      const Align(
-                        alignment: Alignment.center,
-                        child: CircleAvatar(
-                            radius: 150,
-                            backgroundImage: AssetImage("assets/p1.jpg")),
-                      ),
-
-                      customHeight(32),
-
-                      // Contact details
-                      const Text(
-                        "CONTACT",
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 28,
-                          fontWeight: FontWeight.bold,
-                          decoration: TextDecoration.underline,
-                        ),
-                      ),
-                      customHeight(20),
-                      Row(
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // personal information
+                  Container(
+                    color: const Color.fromARGB(255, 196, 206, 214),
+                    child: Padding(
+                      padding: const EdgeInsets.all(16),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisSize: MainAxisSize.min,
                         children: [
-                          const Icon(Icons.phone),
-                          customWidth(16),
-                          const Text(
-                            "9945327865",
-                            style: TextStyle(fontSize: 18),
-                          )
-                        ],
-                      ),
-                      customHeight(16),
-                      Row(
-                        children: [
-                          const Icon(Icons.email),
-                          customWidth(16),
-                          const Text(
-                            "johndoe@gmail.com",
-                            style: TextStyle(fontSize: 18),
-                          )
-                        ],
-                      ),
-                      customHeight(16),
-                      Row(
-                        children: [
-                          const Icon(Icons.location_city),
-                          customWidth(16),
-                          const Text(
-                            "P21, Avenue street, Delhi, 173432",
-                            style: TextStyle(fontSize: 18),
-                          )
-                        ],
-                      ),
-                      customHeight(36),
+                          customHeight(16),
 
-                      //education details
-                      const Text(
-                        "EDUCATION",
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 28,
-                          fontWeight: FontWeight.bold,
-                          decoration: TextDecoration.underline,
-                        ),
-                      ),
-                      customHeight(20),
+                          const Align(
+                            alignment: Alignment.center,
+                            child: CircleAvatar(
+                                radius: 150,
+                                backgroundImage: AssetImage("assets/p1.jpg")),
+                          ),
 
-                      const Text(
-                        "SSLC",
-                        style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                      customHeight(8),
-                      Row(
-                        children: [
-                          customWidth(4),
-                          const Icon(Icons.school),
-                          customWidth(16),
+                          customHeight(32),
+
+                          // Contact details
                           const Text(
-                            "MSP School Malappuram",
-                            style: TextStyle(fontSize: 18),
-                          )
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          customWidth(4),
-                          const Icon(Icons.watch_later_outlined),
-                          customWidth(4),
+                            "CONTACT",
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 28,
+                              fontWeight: FontWeight.bold,
+                              decoration: TextDecoration.underline,
+                            ),
+                          ),
+                          customHeight(20),
+                          Row(
+                            children: [
+                              const Icon(Icons.phone),
+                              customWidth(16),
+                              const Text(
+                                "9945327865",
+                                style: TextStyle(fontSize: 18),
+                              )
+                            ],
+                          ),
+                          customHeight(16),
+                          Row(
+                            children: [
+                              const Icon(Icons.email),
+                              customWidth(16),
+                              const Text(
+                                "johndoe@gmail.com",
+                                style: TextStyle(fontSize: 18),
+                              )
+                            ],
+                          ),
+                          customHeight(16),
+                          Row(
+                            children: [
+                              const Icon(Icons.location_city),
+                              customWidth(16),
+                              const Text(
+                                "P21, Avenue street, Delhi, 173432",
+                                style: TextStyle(fontSize: 18),
+                              )
+                            ],
+                          ),
+                          customHeight(36),
+
+                          //education details
                           const Text(
-                            "2010-2015",
+                            "EDUCATION",
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 28,
+                              fontWeight: FontWeight.bold,
+                              decoration: TextDecoration.underline,
+                            ),
+                          ),
+                          customHeight(20),
+
+                          const Text(
+                            "SSLC",
                             style: TextStyle(
                               fontSize: 22,
-                              fontWeight: FontWeight.w400,
+                              fontWeight: FontWeight.w600,
                             ),
+                          ),
+                          customHeight(8),
+                          Row(
+                            children: [
+                              customWidth(4),
+                              const Icon(Icons.school),
+                              customWidth(16),
+                              const Text(
+                                "MSP School Malappuram",
+                                style: TextStyle(fontSize: 18),
+                              )
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              customWidth(4),
+                              const Icon(Icons.watch_later_outlined),
+                              customWidth(4),
+                              const Text(
+                                "2010-2015",
+                                style: TextStyle(
+                                  fontSize: 22,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                            ],
+                          ),
+
+                          customHeight(16),
+
+                          const Text(
+                            "PLUS TWO",
+                            style: TextStyle(
+                              fontSize: 22,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          customHeight(8),
+                          Row(
+                            children: [
+                              customWidth(4),
+                              const Icon(Icons.school),
+                              customWidth(16),
+                              const Text(
+                                "Boys High School Malappuram",
+                                style: TextStyle(fontSize: 18),
+                              )
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              customWidth(4),
+                              const Icon(Icons.watch_later_outlined),
+                              customWidth(4),
+                              const Text(
+                                "2015-2017",
+                                style: TextStyle(
+                                  fontSize: 22,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                            ],
+                          ),
+
+                          customHeight(16),
+
+                          const Text(
+                            "B Tech",
+                            style: TextStyle(
+                              fontSize: 22,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          customHeight(8),
+                          Row(
+                            children: [
+                              customWidth(4),
+                              const Icon(Icons.school),
+                              customWidth(16),
+                              const Text(
+                                "MEA Engineering College Pattikad",
+                                style: TextStyle(fontSize: 18),
+                              )
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              customWidth(4),
+                              const Icon(Icons.watch_later_outlined),
+                              customWidth(4),
+                              const Text(
+                                "2017-2021",
+                                style: TextStyle(
+                                  fontSize: 22,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                            ],
+                          ),
+
+                          customHeight(36),
+
+                          // Skills
+                          const Text(
+                            "SKILLS",
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 28,
+                              fontWeight: FontWeight.bold,
+                              decoration: TextDecoration.underline,
+                            ),
+                          ),
+
+                          customHeight(20),
+                          Row(
+                            children: [
+                              customWidth(4),
+                              const Text("Flutter Development"),
+                            ],
+                          ),
+                          customHeight(8),
+                          Row(
+                            children: [
+                              customWidth(4),
+                              const Text("Android  Development"),
+                            ],
+                          ),
+                          customHeight(8),
+                          Row(
+                            children: [
+                              customWidth(4),
+                              const Text("Ios  Development"),
+                            ],
+                          ),
+
+                          customHeight(8),
+                          Row(
+                            children: [
+                              customWidth(4),
+                              const Text("Git & Github"),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              customWidth(4),
+                              const Text("Jira"),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              customWidth(4),
+                              const Text("CI/CD"),
+                            ],
                           ),
                         ],
                       ),
-
-                      customHeight(16),
-
-                      const Text(
-                        "PLUS TWO",
-                        style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                      customHeight(8),
-                      Row(
-                        children: [
-                          customWidth(4),
-                          const Icon(Icons.school),
-                          customWidth(16),
-                          const Text(
-                            "Boys High School Malappuram",
-                            style: TextStyle(fontSize: 18),
-                          )
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          customWidth(4),
-                          const Icon(Icons.watch_later_outlined),
-                          customWidth(4),
-                          const Text(
-                            "2015-2017",
-                            style: TextStyle(
-                              fontSize: 22,
-                              fontWeight: FontWeight.w400,
-                            ),
-                          ),
-                        ],
-                      ),
-
-                      customHeight(16),
-
-                      const Text(
-                        "B Tech",
-                        style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                      customHeight(8),
-                      Row(
-                        children: [
-                          customWidth(4),
-                          const Icon(Icons.school),
-                          customWidth(16),
-                          const Text(
-                            "MEA Engineering College Pattikad",
-                            style: TextStyle(fontSize: 18),
-                          )
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          customWidth(4),
-                          const Icon(Icons.watch_later_outlined),
-                          customWidth(4),
-                          const Text(
-                            "2017-2021",
-                            style: TextStyle(
-                              fontSize: 22,
-                              fontWeight: FontWeight.w400,
-                            ),
-                          ),
-                        ],
-                      ),
-
-                      customHeight(36),
-
-                      // Skills
-                      const Text(
-                        "SKILLS",
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 28,
-                          fontWeight: FontWeight.bold,
-                          decoration: TextDecoration.underline,
-                        ),
-                      ),
-
-                      customHeight(20),
-                      Row(
-                        children: [
-                          customWidth(4),
-                          const Text("Flutter Development"),
-                        ],
-                      ),
-                      customHeight(8),
-                      Row(
-                        children: [
-                          customWidth(4),
-                          const Text("Android  Development"),
-                        ],
-                      ),
-                      customHeight(8),
-                      Row(
-                        children: [
-                          customWidth(4),
-                          const Text("Ios  Development"),
-                        ],
-                      ),
-
-                      customHeight(8),
-                      Row(
-                        children: [
-                          customWidth(4),
-                          const Text("Git & Github"),
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          customWidth(4),
-                          const Text("Jira"),
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          customWidth(4),
-                          const Text("CI/CD"),
-                        ],
-                      ),
-                    ],
+                    ),
                   ),
-                ),
+
+                  customHeight(36),
+
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                        vertical: 8,
+                        horizontal: 16,
+                      ),
+                      child: SizedBox(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            // summary
+                            const Text(
+                              "SUMMARY",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 28,
+                                fontWeight: FontWeight.bold,
+                                decoration: TextDecoration.underline,
+                              ),
+                            ),
+                            customHeight(20),
+                            Text(
+                              summaryText,
+                              textAlign: TextAlign.justify,
+                            ),
+
+                            customHeight(36),
+
+                            // work experience
+                            const Text(
+                              "WORK EXPERIENCE",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 28,
+                                fontWeight: FontWeight.bold,
+                                decoration: TextDecoration.underline,
+                              ),
+                            ),
+                            customHeight(20),
+
+                            const Text(
+                              "ANDROID DEVELOPER",
+                              style: TextStyle(
+                                fontSize: 22,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                            customHeight(16),
+                            const Text(
+                              "FALCON TECHNOLOGIES PVT LTD",
+                              style: TextStyle(
+                                fontSize: 16,
+                              ),
+                            ),
+                            const Text(
+                              "2024 - Present",
+                              style: TextStyle(
+                                  fontSize: 16, fontWeight: FontWeight.w600),
+                            ),
+                            customHeight(8),
+                            Row(
+                              children: [
+                                customWidth(4),
+                                const Text("-"),
+                                customWidth(8),
+                                const Text("UI/UX Design"),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                customWidth(4),
+                                const Text("-"),
+                                customWidth(8),
+                                const Text("ERP App development"),
+                              ],
+                            ),
+
+                            customHeight(20),
+
+                            const Text(
+                              "IOS DEVELOPER",
+                              style: TextStyle(
+                                fontSize: 22,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                            customHeight(16),
+                            const Text(
+                              "SEMICON TECHNOLOGIES PVT LTD",
+                              style: TextStyle(
+                                fontSize: 16,
+                              ),
+                            ),
+                            const Text(
+                              "2022 - 2024",
+                              style: TextStyle(
+                                  fontSize: 16, fontWeight: FontWeight.w600),
+                            ),
+                            customHeight(8),
+                            Row(
+                              children: [
+                                customWidth(4),
+                                const Text("-"),
+                                customWidth(8),
+                                const Text("Figma designer"),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                customWidth(4),
+                                const Text("-"),
+                                customWidth(8),
+                                const Text("E Comerce app development"),
+                              ],
+                            ),
+
+                            customHeight(20),
+
+                            const Text(
+                              "FLUTTER DEVELOPER",
+                              style: TextStyle(
+                                fontSize: 22,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                            customHeight(16),
+                            const Text(
+                              "BEACON TECHNOLOGIES PVT LTD",
+                              style: TextStyle(
+                                fontSize: 16,
+                              ),
+                            ),
+                            const Text(
+                              "2020 - 2022",
+                              style: TextStyle(
+                                  fontSize: 16, fontWeight: FontWeight.w600),
+                            ),
+                            customHeight(8),
+                            Row(
+                              children: [
+                                customWidth(4),
+                                const Text("-"),
+                                customWidth(8),
+                                const Text("Figma designer"),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                customWidth(4),
+                                const Text("-"),
+                                customWidth(8),
+                                const Text("E Comerce app development"),
+                              ],
+                            ),
+
+                            // declaration
+                            const Text(
+                              "DECLARATION",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 28,
+                                fontWeight: FontWeight.bold,
+                                decoration: TextDecoration.underline,
+                              ),
+                            ),
+                            customHeight(20),
+                            Text(
+                              declarationText,
+                              textAlign: TextAlign.justify,
+                            ),
+                            customHeight(16),
+
+                            const Text("Date           : 25-12-24"),
+                            const Text("Signature   : "),
+
+                            customHeight(32)
+                          ],
+                        ),
+                      ),
+                    ),
+                  )
+                ],
               ),
-
-              customHeight(36),
-
-              Padding(
-                padding: const EdgeInsets.symmetric(
-                  vertical: 8,
-                  horizontal: 16,
-                ),
-                child: SizedBox(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      // summary
-                      const Text(
-                        "SUMMARY",
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 28,
-                          fontWeight: FontWeight.bold,
-                          decoration: TextDecoration.underline,
-                        ),
-                      ),
-                      customHeight(20),
-                      Text(
-                        summaryText,
-                        textAlign: TextAlign.justify,
-                      ),
-
-                      customHeight(36),
-
-                      // summary
-                      const Text(
-                        "WORK EXPERIENCE",
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 28,
-                          fontWeight: FontWeight.bold,
-                          decoration: TextDecoration.underline,
-                        ),
-                      ),
-                      customHeight(20),
-
-                      const Text(
-                        "ANDROID DEVELOPER",
-                        style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                      customHeight(16),
-                      const Text(
-                        "FALCON TECHNOLOGIES PVT LTD",
-                        style: TextStyle(
-                          fontSize: 16,
-                        ),
-                      ),
-                      const Text(
-                        "2024 - Present",
-                        style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.w600),
-                      ),
-                      customHeight(8),
-                      Row(
-                        children: [
-                          customWidth(4),
-                          const Text("-"),
-                          customWidth(8),
-                          const Text("UI/UX Design"),
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          customWidth(4),
-                          const Text("-"),
-                          customWidth(8),
-                          const Text("ERP App development"),
-                        ],
-                      ),
-
-                      customHeight(20),
-
-                      const Text(
-                        "IOS DEVELOPER",
-                        style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                      customHeight(16),
-                      const Text(
-                        "SEMICON TECHNOLOGIES PVT LTD",
-                        style: TextStyle(
-                          fontSize: 16,
-                        ),
-                      ),
-                      const Text(
-                        "2022 - 2024",
-                        style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.w600),
-                      ),
-                      customHeight(8),
-                      Row(
-                        children: [
-                          customWidth(4),
-                          const Text("-"),
-                          customWidth(8),
-                          const Text("Figma designer"),
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          customWidth(4),
-                          const Text("-"),
-                          customWidth(8),
-                          const Text("E Comerce app development"),
-                        ],
-                      ),
-
-                      customHeight(20),
-
-                      const Text(
-                        "FLUTTER DEVELOPER",
-                        style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                      customHeight(16),
-                      const Text(
-                        "BEACON TECHNOLOGIES PVT LTD",
-                        style: TextStyle(
-                          fontSize: 16,
-                        ),
-                      ),
-                      const Text(
-                        "2020 - 2022",
-                        style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.w600),
-                      ),
-                      customHeight(8),
-                      Row(
-                        children: [
-                          customWidth(4),
-                          const Text("-"),
-                          customWidth(8),
-                          const Text("Figma designer"),
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          customWidth(4),
-                          const Text("-"),
-                          customWidth(8),
-                          const Text("E Comerce app development"),
-                        ],
-                      ),
-
-                      // declaration
-                      const Text(
-                        "DECLARATION",
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 28,
-                          fontWeight: FontWeight.bold,
-                          decoration: TextDecoration.underline,
-                        ),
-                      ),
-                      customHeight(20),
-                      Text(
-                        declarationText,
-                        textAlign: TextAlign.justify,
-                      ),
-                      customHeight(16),
-
-                      const Text("Date           : 25-12-24"),
-                      const Text("Signature   : "),
-
-                      customHeight(32)
-                    ],
-                  ),
-                ),
-              )
             ],
           ),
         ),
